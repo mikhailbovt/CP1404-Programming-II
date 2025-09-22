@@ -31,11 +31,29 @@ jobs:
         git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep '\.py$' > changed_files.txt || true
         cat changed_files.txt
 
-
     - name: Run pylint on changed files
+      id: pylint
       run: |
         if [ -s changed_files.txt ]; then
-          xargs -a changed_files.txt python -m pylint || true
+          python -m pylint $(cat changed_files.txt) --score=y > pylint-report.txt || true
+          cat pylint-report.txt
+          SCORE=$(grep "Your code has been rated at" pylint-report.txt | tail -1 || echo "No score")
+          echo "score=$SCORE" >> $GITHUB_OUTPUT
         else
-          echo "No Python files changed."
+          echo "No Python files changed." | tee pylint-report.txt
+          echo "score=No Python files changed." >> $GITHUB_OUTPUT
         fi
+
+    - name: Add summary to PR
+      run: |
+        {
+          echo "## 🐍 Pylint report (Python ${{ matrix.python-version }})"
+          echo ""
+          echo "### Code score"
+          echo "${{ steps.pylint.outputs.score }}"
+          echo ""
+          echo "### Full report"
+          echo "\`\`\`"
+          cat pylint-report.txt
+          echo "\`\`\`"
+        } >> $GITHUB_STEP_SUMMARY
