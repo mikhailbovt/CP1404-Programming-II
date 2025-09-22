@@ -27,9 +27,10 @@ jobs:
     - name: Get changed Python files
       id: changed-files
       run: |
-        git fetch origin ${{ github.base_ref }}
-        git diff --name-only origin/${{ github.base_ref }}...HEAD | grep '\.py$' > changed_files.txt || true
+        git fetch origin ${{ github.event.pull_request.base.ref }} --depth=1
+        git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep '\.py$' > changed_files.txt || true
         cat changed_files.txt
+
 
     - name: Run pylint on changed files
       run: |
