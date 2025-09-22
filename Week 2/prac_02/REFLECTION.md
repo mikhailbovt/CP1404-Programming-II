@@ -21,7 +21,6 @@
 
 ## What are you doing well in the subject so far that you will keep doing?
 
-Working with GitHub (I created my repo a week before I asked to), writing fuctions, optimisation of my work using GitHub Actions.
 - 🧩 **Writing fuctions** — I think I am doing it well.
 - 🔗 **Working with GitHub** — I created my repo a week before I asked to.
 - ⚙️ **Automation** — Optimisation of my work using GitHub Actions.
