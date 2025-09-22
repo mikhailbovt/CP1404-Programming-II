@@ -35,7 +35,9 @@ jobs:
       id: pylint
       run: |
         if [ -s changed_files.txt ]; then
-          python -m pylint $(cat changed_files.txt) --score=y > pylint-report.txt || true
+          while IFS= read -r file; do
+            python -m pylint "$file" || true
+          done < changed_files.txt > pylint-report.txt 2>&1
           cat pylint-report.txt
           SCORE=$(grep "Your code has been rated at" pylint-report.txt | tail -1 || echo "No score")
           echo "score=$SCORE" >> $GITHUB_OUTPUT
@@ -43,6 +45,7 @@ jobs:
           echo "No Python files changed." | tee pylint-report.txt
           echo "score=No Python files changed." >> $GITHUB_OUTPUT
         fi
+
 
     - name: Add summary to PR
       run: |
