@@ -16,7 +16,7 @@ Me: Mikhail Bovt
 | Week | Lecture | Practical |
 |------|---------|-----------|
 | ✅ Week 1 | IPO, Decisions, Loops | Hello, input() |
-| ⏳ Week 2 | Functions, Git & GitHub |  |
+| ✅ Week 2 | Functions, Git & GitHub | My mind almost blowed when I tried to find password_stars.py |
 | ⬜ Week 3 | Files, Exceptions, Testing |  |
 | ⬜ Week 4 | Lists, Tuples, Strings |  |
 | ⬜ Week 5 | Dicts, Code Reviews |  |
