@@ -30,11 +30,10 @@ Working with GitHub (I created my repo a week before I asked to), writing fuctio
 
 ## What do you need to stop or change in your work for this subject overall so far?
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=F78C6C&center=true&vCenter=true&width=700&lines=🤔+Honestly%2C+I+don't+know+yet...;+Maybe+I'm+doing+fine%2C+maybe+not.;⚙️+I+believe+my+prof+will+tell+me." alt="Typing SVG"/>
-</p>
+> 🤔 Honestly, I don't know yet...  
+> Maybe I'm doing fine, maybe not.  
+> ⚙️ I believe my prof will tell me.
  
-
 ---
 
 ## What are you currently doing poorly for practicals in this subject that you will change?
