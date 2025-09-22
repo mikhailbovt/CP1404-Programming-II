@@ -6,6 +6,7 @@ This repo is where I dump all my progress, pain, breakthroughs, bugs, "wtf Pytho
 No corporate fluff. Just me vs. Python.  
 Semester: TR3 2025 @ JCU Singapore  
 Educators: Cynthia Chan and Lindsay Ward
+
 Me: Mikhail Bovt
 
 ---
