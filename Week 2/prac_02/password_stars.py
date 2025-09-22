@@ -1,7 +1,10 @@
-"""Password validation program with star output."""
-
+"""
+CP1404/CP5632 - Practical
+Program for password validation and star output
+Mikhail Bovt
+22/09/2025
+"""
 MIN_LENGTH = 6
-
 
 def main():
     """Get and validate password, then print stars."""

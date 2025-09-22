@@ -4,8 +4,6 @@ Program for temperature conversion
 Mikhail Bovt
 22/09/2025
 """
-"""Program for temperature conversion with menu"""
-
 MENU = """C - Convert Celsius to Fahrenheit
 F - Convert Fahrenheit to Celsius
 Q - Quit"""

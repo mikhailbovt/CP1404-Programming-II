@@ -4,11 +4,7 @@ Program to determine score status
 Mikhail Bovt
 22/09/2025
 """
-
-"""Program to determine score status using functions"""
-
 import random
-
 
 def main():
     """Get user score, classify it, then generate and classify a random score."""
