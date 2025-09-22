@@ -9,7 +9,7 @@ def get_number():
         print("Higher number must be greater than 0")
         high_number = int(input("Enter the high number: "))
     low_number = int(input("Enter the low number: "))
-    while high_number < low_number:
+    while high_number <= low_number:
         print("Lower number must be less than the higher number")
         low_number = int(input("Enter the low number: "))
     return high_number, low_number
